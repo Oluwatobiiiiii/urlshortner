@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REUSABLE CLASSES */
+
+:root{
+ --Gray--: hsl(0, 0%, 75%);
+ ---GrayishViolet--: hsl(257, 7%, 63%);
+ ---VeryDarkBlue--: hsl(255, 11%, 22%);
+ ---VeryDarkViolet--: hsl(260, 8%, 14%);
+ ---Cyan--: hsl(180, 66%, 49%);
+ ---DarkViolet--: hsl(257, 27%, 26%);
+ ---Red--: hsl(0, 87%, 67%)
+}
+
+body{
+    font-family: 'Poppins' , sans-serif;
+}
+
+/* NAVBAR */
+#navbar{
+    margin: 1rem;
+    max-width: 1750px;
+}
+
+.nav-section{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.navbar-logo{
+    margin: 1rem;
+}
+
+
+#nav-mobile-menu{
+    position: absolute;
+    margin-left:4rem;
+    width: 250px;
+    height: 250px;
+    background-color: var(---DarkViolet--);
+    top: 60px;
+    left: 40px;
+    border-radius: 5%;
+}
+
+.navbar-menu{
+   display: none;
+}
+
+.navbar-menu.active{
+    display: block;
+}
+
+.nav-links{
+    text-align: center;
+    list-style: none;
+    padding: 1.5rem;
+}
+
+.nav-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 3rem;
+}
+
+.nav-link > a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.nav-btn-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+#nav-button{
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: var(---Cyan--);
+}
+
+#nav-button > a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-mobile-menu{
+    margin-top: 10rem;
+}
+
+.navbar-toogle{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.navbar-toogle .line{
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(---VeryDarkViolet--);
+    margin-block: 10px;
+    border-radius: 4px;
+    transition: transform .5s;
+    opacity: .25s;
+}
+
+.navbar-toogle.active .line:nth-child(1){
+    transform: translateY(13px) rotate(45deg);
+}
+
+.navbar-toogle.active .line:nth-child(2){
+    opacity: 0;
+}
+
+.navbar-toogle.active .line:nth-child(3){
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+
+/* HOME SECTION */
+#home{
+    margin: 1rem;
+}
+
+.shortly-intro{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50%;
+}
+
+.developer-working{
+    width: 29rem;
+}
+
+.shortly-text{
+    gap: 50%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.shortly-btn{
+    margin-top: 1rem;
+    width: 140px;
+    height: 50px;
+    color: white;
+    background-color: var(---Cyan--);
+    border: none;
+    font-weight: 900;
+    border-radius: 50px;
+}
+
+.shortly-image{
+    gap: 50%;
+}
+
+.shortly-intro-1{
+    font-weight: 700;
+    color: var(---VeryDarkViolet--);
+}
+
+.shortly-text-1{
+    font-family: 500;
+    padding-top: 1rem;
+    color: var(---GrayishViolet--);
+}
+
+/* URL-SHORTNER */
+#url-short{
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.shortly-shorter{
+    width: 100%;
+    height: 110px;
+    background-color: var(---DarkViolet--);
+    border-radius: 10px;
+    background-image: url(../images/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.link-shortner{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+#url-shortner{
+    width: 210px;
+    height: 30px;
+    align-self: center;
+    border-radius: 3px;
+    border-style: none;
+    padding-inline-start: .5rem;
+    font-weight: 500;
+}
+
+.btn-shorten{
+    width: 200px;
+    height: 30px;
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(---Cyan--);
+    border-style: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+/* GET STARTED BUTTON */
+
+
+/* FOOTER */
+
+
+/* MEDIA RESPONSIVITY FOR TABLETS */
+
+/* NAVBAR FOR TABLETS  */
+
+/* HOME SECTION FOR TABLETS */
+
+/* URL-SHORTNER FOR TABLETS */
+
+
+
+/* GET STARTED BUTTON FOR TABLETS */
+
+/* FEATURES FOR TABLETS */
+
+
+/* FOOTER FOR TABLETS */
+
+
+/* MEDIA RESPONSIVITY FOR LAPTOPS */
+
+
+
+/* NAVBAR FOR LAPTOPS  */
+
+/* HOME SECTION FOR LAPTOPS */
+
+/* URL-SHORTNER FOR LAPTOPS */
+
+/* FEATURES FOR LAPTOPS */
+
+/* GET STARTED BUTTON FOR LAPTOPS */
+
+/* FOOTER FOR LAPTOPS */
+
+
+
+/* MEDIA RESPONSIVITY FOR LARGER SCREENS  */
+
+/* NAVBAR FOR LARGER SCREENS  */
+
+/* HOME SECTION FOR LARGER SCREENS*/
+
+/* URL-SHORTNER FOR LARGER SCREENS */
+
+/* FEATURES FOR LARGER SCREENS */
+
+/* GET STARTED BUTTON FOR LARGER SCREENS */
+
+/* FOOTER FOR LARGER SCREENS */
+
+
